@@ -9,6 +9,15 @@
         null,
         1,
         2,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/gassinbreh/GitHub/rails/sld/spec/rails_helper.rb": [
@@ -554,6 +563,20 @@
         null,
         null
       ],
+      "/Users/gassinbreh/GitHub/rails/sld/spec/factories.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/gassinbreh/GitHub/rails/sld/config/routes.rb": [
         1,
         1,
@@ -589,6 +612,6 @@
         null
       ]
     },
-    "timestamp": 1487359051
+    "timestamp": 1487359917
   }
 }
