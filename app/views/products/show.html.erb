@@ -9,3 +9,19 @@
     </div>
   </div>
 </div>
+
+<% if @product.comments.length > 0 %>
+<div class="row">
+  <div class="comments col-md-6 col-md-offset-3">
+    <h2>Comments</h2>
+    <% @product.comments.each do |comment| %>
+      <div class="comment">
+          <p><%= comment.comment %></p>
+      </div>
+    <% end %>
+    <% if current_user %>
+      <%= link_to 'Leave Comment', new_product_comment_path(@product) %>
+    <% end %>
+  </div>
+</div>
+<% end %>

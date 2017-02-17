@@ -402,3 +402,16 @@ a>i {
     }
   }
 }
+
+.comments {
+  text-align: center;
+}
+
+.comment {
+  text-align: left;
+  background-color: rgba(250,250,250,0.9);
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 1%;
+  position: relative;
+}
