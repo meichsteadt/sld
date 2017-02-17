@@ -2,22 +2,10 @@
   "RSpec": {
     "coverage": {
       "/Users/gassinbreh/GitHub/rails/sld/spec/models/product_spec.rb": [
-
-      ],
-      "/Users/gassinbreh/GitHub/rails/sld/spec/models/user_spec.rb": [
         1,
         null,
         1,
         2,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
         null
       ],
       "/Users/gassinbreh/GitHub/rails/sld/spec/rails_helper.rb": [
@@ -606,12 +594,34 @@
         1,
         null
       ],
+      "/Users/gassinbreh/GitHub/rails/sld/app/models/product.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/gassinbreh/GitHub/rails/sld/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/gassinbreh/GitHub/rails/sld/app/models/comment.rb": [
         1,
         1,
         null
       ]
     },
-    "timestamp": 1487359917
+    "timestamp": 1487360194
   }
 }
