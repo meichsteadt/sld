@@ -569,6 +569,11 @@
         1,
         1,
         null,
+        1,
+        1,
+        null,
+        null,
+        1,
         null
       ],
       "/Users/gassinbreh/GitHub/rails/sld/app/models/user.rb": [
@@ -619,9 +624,10 @@
       "/Users/gassinbreh/GitHub/rails/sld/app/models/comment.rb": [
         1,
         1,
+        1,
         null
       ]
     },
-    "timestamp": 1487360194
+    "timestamp": 1487378285
   }
 }

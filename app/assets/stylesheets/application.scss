@@ -404,6 +404,7 @@ a>i {
 }
 
 .comments {
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -414,4 +415,11 @@ a>i {
   border: 1px solid #ccc;
   border-radius: 1%;
   position: relative;
+  font-size: 16px;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  padding: 10px 15px;
+  margin-top: 20px;
 }

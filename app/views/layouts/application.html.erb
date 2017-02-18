@@ -47,9 +47,14 @@
     <div class="container">
       <%= yield %>
     </div>
-
-    <footer>
-      <p class="pull-right"><a href="#">Back to top</a></p>
-    </footer>
+      <footer>
+        <% if current_user %>
+          <% if current_user.admin %>
+            <%= link_to 'Add product', new_product_path %>
+          <% end %>
+          <%= yield(:footer) %>
+        <% end %>
+          <p class="pull-right"><a href="#">Back to top</a></p>
+        </footer>
   </body>
 </html>

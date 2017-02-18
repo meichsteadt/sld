@@ -1,4 +1,7 @@
 <div class="row">
+  <div class="col-md-offset-1">
+    <h3><%= flash[:notice] %></h3>
+  </div>
   <div class="product-details">
     <div class="col-md-5 col-md-offset-1" style="background: url('<%= @product.photo %>') no-repeat center center; background-size: cover;">
     </div>
@@ -10,18 +13,26 @@
   </div>
 </div>
 
-<% if @product.comments.length > 0 %>
 <div class="row">
   <div class="comments col-md-6 col-md-offset-3">
-    <h2>Comments</h2>
-    <% @product.comments.each do |comment| %>
-      <div class="comment">
-          <p><%= comment.comment %></p>
-      </div>
+    <% if @product.comments.length > 0 %>
+        <h2>Comments</h2>
+        <% @product.comments.each do |comment| %>
+          <div class="comment">
+              <p><%= comment.comment %></p>
+          </div>
+        <% end %>
     <% end %>
     <% if current_user %>
-      <%= link_to 'Leave Comment', new_product_comment_path(@product) %>
+      <%= link_to 'Leave Comment', new_product_comment_path(@product), style: 'margin-top: 10px; display: block;' %>
     <% end %>
   </div>
 </div>
+
+<% if current_user  %>
+  <% if current_user.admin %>
+    <% content_for :footer do %>
+      <%= link_to '| Edit Product', edit_product_path(@product) %>
+    <% end %>
+  <% end %>
 <% end %>
