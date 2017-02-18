@@ -7,6 +7,20 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
+  def new
+    @product = Product.new
+  end
+
+  def create
+    @product = Product.new(product_params)
+    if @product.save
+      flash[:notice] = "Successfully created product"
+      redirect_to product_path(@product)
+    else
+      render 'new'
+    end
+  end
+
   def edit
     @product = Product.find(params[:id])
   end
@@ -16,6 +30,8 @@ class ProductsController < ApplicationController
     if @product.update(product_params)
       flash[:notice] = "Successfully updated product"
       redirect_to product_path(@product)
+    else
+      render 'edit'
     end
   end
 private
