@@ -12,7 +12,6 @@ _A storefront built in Ruby on Rails_
 * It allows a user to leave a comment on the product
 * It allows an admin to create, update, and delete products
 * It allows an admin to delete a comment
-* The styling was based off of [Apple.com](https://apple.com), all in order to make a minuscule amount of wordplay
 
 ## Prerequisites
 
@@ -24,12 +23,11 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/meichsteadt/appleStore`
+* `git clone https://github.com/meichsteadt/sld`
 * `bundle install`
 * make sure postgres is running
 * `rake db:create`
 * `rake db:migrate`
-* `rake db:seed` if you want to see the brilliant product creation I did
 
 
 
@@ -37,7 +35,6 @@ You will need the following things properly installed on your computer.
 
 * `rails s`
 * Visit your app at [http://localhost:3000](http://localhost:3000).
-* Or check it out [here](https://powerful-hollows-75971.herokuapp.com/).
 
 ## Known Bugs
 
