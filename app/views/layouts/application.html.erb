@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <%= flash[:notice] %>
     <div class="text-center top-bar" id="top-bar">
       <p><strong><%= link_to('Sign up', new_user_registration_path) %></strong> and receive free shipping on your first order</p>
     </div>

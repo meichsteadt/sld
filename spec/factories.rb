@@ -5,6 +5,13 @@ FactoryGirl.define do
     admin false
   end
 
+  factory(:product) do
+    name 'Super dope table'
+    description 'see the name'
+    price 12
+    photo 'a'
+  end
+
   factory(:comment) do
     comment 'test'
     rating 5
